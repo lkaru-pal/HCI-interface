@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grandview Plaza Shopping Center</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mycss/mainpage.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="brand">
+            <span class="material-icons">storefront</span>
+            <span>Grandview Plaza</span>
+        </div>
+
+        <input type="checkbox" id="nav-check" class="nav-checkbox">
+        <label for="nav-check" class="nav-toggle" aria-label="Toggle navigation">
+            <span class="material-icons">menu</span>
+        </label>
+
+        <nav class="nav-links">
+            <form class="nav-search" role="search" onsubmit="handleNavSearch(event)">
+                <label for="nav-search-input" class="visually-hidden">Search sections</label>
+                <input id="nav-search-input" type="search" placeholder="Search..." aria-label="Search site sections">
+                <button type="submit" aria-label="Search"><span class="material-icons">search</span></button>
+            </form>
+            <a href="#home">
+                <span class="material-icons">home</span>
+                <span>Home</span>
+            </a>
+            <a href="#shopping">
+                <span class="material-icons">shopping_cart</span>
+                <span>Shopping</span>
+            </a>
+            <a href="#banks">
+                <span class="material-icons">account_balance</span>
+                <span>Banks</span>
+            </a>
+            <a href="#parking">
+                <span class="material-icons">local_parking</span>
+                <span>Parking</span>
+            </a>
+            <a href="#help">
+                <span class="material-icons">help_outline</span>
+                <span>Help</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section id="home" class="hero-section">
+            <div>
+                <h1>Welcome to Grandview Plaza ♡</h1>
+                <p>Use the navigation above to explore shopping, banks, parking, and support options at your local
+                    shopping center.</p>
+            </div>
+        </section>
+
+        <section id="shopping" class="category-section">
+            <div class="section-card">
+
+
+                <summary id="shopicon">
+                    <h2> Shopping <span class="material-icons">shopping_cart</span>
+                    </h2>
+                </summary>
+
+
+                <p>Discover boutiques, food courts, and retail stores for fashion, electronics, and gifts.</p>
+                <div class="dropdowns">
+                    <details class="dropdown">
+                        <summary id="shopicon">
+                            <span class="material-icons">checkroom</span>
+                            Fashion and clothing
+                        </summary>
+                        <div class="sub-dropdowns">
+                            <details class="sub-dropdown">
+                                <summary>Next</summary>
+                                <div class="sub-dropdown-media">
+                                    <div class="image-slot">
+                                        <img src="Unit 10 Images/next.png" alt="Next store">
+                                    </div>
+                                    <p>
+                                        Next offers a wide range of stylish clothing for all age groups and genders,
+                                        located near the North Main entrance to the help centre in the center of the
+                                        mall.
+                                        View the map here for help navigating to the store.
+                                    </p>
+                                </div>
+                            </details>
+                            <details class="sub-dropdown">
+                                <summary>Superdry</summary>
+                                <div class="sub-dropdown-media">
+                                    <div class="image-slot">
+                                        <img src="Unit 10 Images/superdry.png"
+                                            alt="Superdry store, located nearest to the North entrance">
+                                    </div>
+                                    <p>
+                                        Superdry is located nearest to the north entrance of the mall, just past the
+                                        help centre in the middle of the mall.
+                                        View the map here for help navigating to this store.
+                                    </p>
+                                </div>
+                            </details>
+                            <details class="sub-dropdown">
+                                <summary>Primark</summary>
+                                <div class="sub-dropdown-media">
+                                    <div class="image-slot">
+                                        <img src="Unit 10 Images/primark.png"
+                                            alt="Primark store, located nearest to the North entrance">
+                                    </div>
+                                    <p>
+                                        Primark is located nearest to the north entrance past the help centre in the
+                                        middle of the mall.
+                                        View the map here for help navigating the mall.
+                                    </p>
+                                </div>
+                            </details>
+                            <details class="sub-dropdown">
+                                <summary>H&M</summary>
+                                <div class="sub-dropdown-media">
+                                    <div class="image-slot">
+                                        <img src="Unit 10 Images/handm.png"
+                                            alt="H&M store, located nearest to the North entrance">
+                                    </div>
+                                    <p>
+                                        H&M is located nearest to the north entrance past the help centre in the
+                                        middle of the mall.
+                                        View the map here for help navigating the mall.
+                                    </p>
+                                </div>
+                            </details>
+                            <details class="sub-dropdown">
+                                <summary>Zara</summary>
+                                <div class="sub-dropdown-media">
+                                    <div class="image-slot">
+                                        <img src="Unit 10 Images/zara.png"
+                                            alt="Zara store, located nearest to the West entrance">
+                                    </div>
+                                    <p>
+                                        Zara is located nearest to the west entrance past the help centre in the
+                                        middle of the mall.
+                                        View the map here for help navigating the mall.
+                                    </p>
+                                </div>
+                            </details>
+                            <details class="sub-dropdown">
+                                <summary>JD Sports</summary>
+                                <div class="sub-dropdown-media">
+                                    <div class="image-slot">
+                                        <img src="Unit 10 Images/jdsports.png"
+                                            alt="JD Sports store, located nearest to the West entrance">
+                                    </div>
+                                    <p>
+                                        JD Sports is located nearest to the west entrance past the help centre in the
+                                        middle of the mall.
+                                        View the map here for help navigating the mall.
+                                    </p>
+                                </div>
+                            </details>
+                            <details class="sub-dropdown">
+                                <summary>Sports Direct</summary>
+                                <div class="sub-dropdown-media">
+                                    <div class="image-slot">
+                                        <img src="Unit 10 Images/sportsdirect.png"
+                                            alt="Sports Direct store, located nearest to the North entrance">
+                                    </div>
+                                    <p>
+                                        Sports Direct is located nearest to the north entrance past the help centre in
+                                        the
+                                        middle of the mall.
+                                        View the map here for help navigating the mall.
+                                    </p>
+                                </div>
+                            </details>
+
+                            <details class="sub-dropdown">
+                                <summary>River Island</summary>
+                                <div class="sub-dropdown-media">
+                                    <div class="image-slot">
+                                        <img src="Unit 10 Images/river island .png"
+                                            alt="River Island store, located nearest to the South entrance">
+                                    </div>
+                                    <p>
+                                        River Island is located nearest to the South entrance past the help centre in
+                                        the
+                                        middle of the mall.
+                                        View the map here for help navigating the mall.
+                                    </p>
+                                </div>
+                            </details>
+                        </div>
+                    </details>
+                    <details class="dropdown">
+                        <summary>
+                            <span class="material-icons">card_giftcard</span>
+                            Specialty gift shops
+                        </summary>
+                        <div class="sub-dropdowns">
+                            <details class="sub-dropdown">
+                                <summary>Smyths</summary>
+                                <div class="sub-dropdown-media">
+                                    <div class="image-slot">
+                                        <img src="Unit 10 Images/smyths.png"
+                                            alt="Smyths store, located nearest to the east entrance">
+                                    </div>
+                                    <p>
+                                        Smyths is located nearest to the east entrance past the help centre in the
+                                        middle of the mall.
+                                        View the map here for help navigating the mall.
+                                    </p>
+                                </div>
+                            </details>
+                            <details class="sub-dropdown">
+                                <summary>Lush</summary>
+                                <div class="sub-dropdown-media">
+                                    <div class="image-slot">
+                                        <img src="Unit 10 Images/lush.png"
+                                            alt="Lush store, located nearest to the east entrance">
+                                    </div>
+                                    <p>
+                                        Lush is located nearest to the east entrance.
+                                        View the map here for help navigating the mall.
+                                    </p>
+                                </div>
+                            </details>
+                            <details class="sub-dropdown">
+                                <summary>Pandora</summary>
+                                <div class="sub-dropdown-media">
+                                    <div class="image-slot">
+                                        <img src="Unit 10 Images/pandora.png"
+                                            alt="Pandora store, located nearest to the east entrance">
+                                    </div>
+                                    <p>
+                                        Pandora is located nearest to the east entrance.
+                                        View the map here for help navigating the mall.
+                                    </p>
+                                </div>
+                            </details>
+                            <details class="sub-dropdown">
+                                <summary>Foot asylum</summary>
+                                <div class="sub-dropdown-media">
+                                    <div class="image-slot">
+                                        <img src="Unit 10 Images/footasylum.png"
+                                            alt="Foot asylum store, located nearest to the South entrance">
+                                    </div>
+                                    <p>
+                                        Foot asylum is located nearest to the South entrance.
+                                        View the map here for help navigating the mall.
+                                    </p>
+                                </div>
+                            </details>
+                            <details class="sub-dropdown">
+                                <summary>Boots</summary>
+                                <div class="sub-dropdown-media">
+                                    <div class="image-slot">
+                                        <img src="Unit 10 Images/boots.png"
+                                            alt="Boots store, located nearest to the east entrance">
+                                    </div>
+                                    <p>
+                                        Boots is located nearest to the east entrance.
+                                        View the map here for help navigating the mall.
+                                    </p>
+                                </div>
+                            </details>
+
+
+                        </div>
+                    </details>
+
+                    <details class="dropdown">
+                        <summary>
+                            <span class="material-icons">restaurant</span>
+                            Food & beverage options
+                        </summary>
+                        <div class="sub-dropdowns">
+                            <details class="sub-dropdown">
+                                <summary>Food Court</summary>
+                                <div class="sub-dropdown-media">
+                                    <div class="image-slot">
+                                        <img src="Unit 10 Images/foodcourt.png"
+                                            alt="Food court, located nearest to the West entrance of the mall">
+                                    </div>
+                                    <p>
+                                        The food court is located nearest to the west entrance of the mall, filled with
+                                        a variety
+                                        of dining options to best suit the needs of all visitors..
+                                        View the map here for help navigating to the Food Court.
+                                    </p>
+                                </div>
+                            </details>
+                        </div>
+                </div>
+        </section>
+
+        <section id="banks" class="category-section">
+            <div class="section-card">
+                <h2>Banks</h2>
+                <p>Find safe, convenient banking services with ATM access, teller support, and financial assistance.</p>
+                <div class="sub-dropdown-media">
+                    <div class="imgbanks">
+
+                        <div class="image-slot">
+                            <img src="Unit 10 Images/Banks .png"
+                                alt="Banks, located nearest to the East entrance of the mall">
+                        </div>
+                    </div>
+                    <p>
+                        The banks are located nearest to the east entrance of the mall, all providing safe and
+                        convenient banking services.
+                        They are grouped together for easy access to ATM machines, teller support, and financial
+                        assistance.
+                        View the map here for help navigating to the banks.
+                    </p>
+                </div>
+                </details>
+            </div>
+            </div>
+        </section>
+
+
+
+        </div>
+        </section>
+
+        <section id="parking" class="category-section">
+            <div class="section-card">
+                <h2>Parking</h2>
+
+                <p>Parking is designed for easy entry, electric vehicle charging, and accessible spaces near every
+                    entrance.</p>
+                <div class="sub-dropdown-media">
+
+                    <div class="imgpark">
+                        <img src="Unit 10 Images/parking.png"
+                            alt="Parking, located surrounding the mall with accessible spaces near every entrance">
+                    </div>
+
+
+                    <p>
+                        Our parking fees are cheap and affordable.
+                        View the map here for help navigating to the parking lot and finding the best spot for your
+                        visit.
+                    </p>
+
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <section id="help" class="category-section">
+            <div class="section-card">
+                <h2>Help</h2>
+                <p>Need assistance? Our help desk is ready to answer questions, provide directions, and support
+                    visitors.</p>
+                <div class="dropdowns">
+                    <details class="dropdown">
+                        <summary id="helpicon">
+                            <span class="material-icons">local_fire_department</span>
+                            Fire Escapes and Emergency Exits
+                        </summary>
+                        <div class="sub-dropdowns">
+                            <details class="sub-dropdown">
+                                <summary>Fire escapes</summary>
+                                <div class="sub-dropdown-media">
+                                    <div class="image-slot">
+                                        <img src="Unit 10 Images/fire-escape.png" alt="Fire escape">
+                                    </div>
+                                    <p>
+                                        Fire escapes are strategically placed throughout the mall for quick and safe
+                                        evacuation.
+                                        View the map here for help navigating to the nearest fire escape.
+                                    </p>
+                                </div>
+                            </details>
+                            <details class="sub-dropdown">
+                                <summary>Emergency Exits</summary>
+                                <div class="sub-dropdown-media">
+                                    <div class="image-slot">
+                                        <img src="Unit 10 Images/emergency-exit.png"
+                                            alt="Emergency exits, located near every entrance and throughout the mall">
+                                    </div>
+                                    <p>
+                                        Emergency exits are strategically placed in every possible entrance
+                                        (North, South, East and West entrances) for quick and safe evacuation.
+                                        View the map here for help navigating to the nearest emergency exit.
+                                    </p>
+                                </div>
+                            </details>
+                        </div>
+                    </details>
+                    <details class="dropdown">
+                        <summary id="helpicon">
+                            <span class="material-icons">accessible</span>
+                            Disabled access and facilities
+                        </summary>
+                        <div class="sub-dropdowns">
+                            <details class="sub-dropdown">
+                                <summary>Disabled bathrooms</summary>
+                                <div class="sub-dropdown-media">
+                                    <div class="image-slot">
+                                        <img src="Unit 10 Images/disabled-bathrooms.png"
+                                            alt="Disabled bathroom facilities">
+                                    </div>
+                                    <p>
+                                        Accessible bathrooms are located primarily near the West entrance and the food
+                                        court.
+                                        If visitors require any additional assistance with accessing this bathroom,
+                                        please
+                                        consult with the help desk located in the middle of the mall for support.
+                                        View the map here for help navigating to the nearest accessible bathroom.
+                                    </p>
+                                </div>
+                            </details>
+                            <details class="sub-dropdown">
+                                <summary>Wheelchair access</summary>
+                                <div class="sub-dropdown-media">
+                                    <div class="image-slot">
+                                        <img src="Unit 10 Images/wheelchair-access.png"
+                                            alt="Wheelchair access throughout the mall">
+                                    </div>
+                                    <p>
+                                        Our parking lot includes designated accessible parking spaces near every
+                                        entrance for easy access to the mall
+                                        Wheelchair access is available at all entrances and throughout the mall.
+                                        Elevators and ramps are strategically placed for easy navigation.
+                                        If any visitors require additional assistance tranferring out of vehicles to
+                                        enter
+                                        the mall, please consult with the help desk located in the middle of the mall
+                                        for support, or call
+                                        the help line at 555-123-4567 for assistance.
+                                        View the map here for help navigating accessible routes.
+                                    </p>
+                                </div>
+                            </details>
+                        </div>
+                    </details>
+
+                    <details class="dropdown">
+                        <summary id="helpicon">
+                            <span class="material-icons">help</span>
+                            Interface navigation support
+                        </summary>
+                        <div class="sub-dropdowns">
+                            <details class="sub-dropdown">
+                                <summary>How to use the interface</summary>
+                                <div class="sub-dropdown-media">
+                                    <div class="image-slot">
+                                        <img src="Unit 10 Images/how-to-use.png" alt="Interface navigation support">
+                                    </div>
+                                    <p>
+                                        Our website is designed to be user-friendly and accessible to all visitors.
+                                        Navigation is simplified, and we have included simplified dropdown menus to help
+                                        you quickly find the information and locations you need.
+                                        If you have any questions or need assistance using the website, please call us
+                                        on the GrandView Plaza help line at 555-123-4567
+                                        for support.
+
+                                    </p>
+                            </details>
+
+                        </div>
+                    </details>
+
+
+                    <details class="dropdown">
+                        <summary id="helpicon">
+                            <span class="material-icons"> attach_money</span>
+                            Special offers and discounts
+                        </summary>
+                        <div class="sub-dropdowns">
+                            <details class="sub-dropdown">
+                                <summary>Our deals and featured offers</summary>
+                                <div class="sub-dropdown-media">
+                                    <div class="image-slot">
+                                        <img src="Unit 10 Images/offers-discounts.png"
+                                            alt="Special offers and discounts">
+                                    </div>
+                                    <p>
+                                        We offer special offers and discounts to our customers with disabilities,
+                                        as well as to older adults and veterans. Please call the GrandView Plaza help
+                                        line at 555-123-4567 for more information on how to access these discounts and
+                                        offers.
+                                        If these discounts and offers are not applicable to you, we also have a variety
+                                        of other deals and featured offers available to all customers on a
+                                        store-by-store basis.
+                                        Please call the help line for more information on how to access these deals and
+                                        offers.
+
+                                    </p>
+                            </details>
+
+                        </div>
+                    </details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+
+
+            </div>
+        </section>
+
+
+
+
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <div>
+            <p>&copy; 2026 Grandview Plaza</p>
+            <p>123 Market Way, Your City, State</p>
+        </div>
+        <div class="footer-links">
+            <a href="#shopping">Shopping</a>
+            <a href="#banks">Banks</a>
+            <a href="#parking">Parking</a>
+            <a href="#help">Help</a>
+        </div>
+    </footer>
+
+    <div id="imageModal" class="image-modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-image" src="" alt="Full size image">
+    </div>
+
+    <button id="scrollToTopBtn" class="scroll-to-top" aria-label="Scroll to top">↑</button>
+
+    <script>
+        const modal = document.getElementById('imageModal');
+        const modalImage = document.querySelector('.modal-image');
+        const modalClose = document.querySelector('.modal-close');
+        const images = document.querySelectorAll('.image-slot img, .imgpark img');
+
+        function handleNavSearch(event) {
+            event.preventDefault();
+            const query = document.getElementById('nav-search-input').value.trim().toLowerCase();
+            if (!query) return;
+
+            const navLinks = Array.from(document.querySelectorAll('.nav-links a'));
+            const linkMatch = navLinks.find(link => link.textContent.toLowerCase().includes(query));
+            let targetSection = null;
+
+            if (linkMatch) {
+                targetSection = document.querySelector(linkMatch.getAttribute('href'));
+            }
+
+            if (!targetSection) {
+                targetSection = Array.from(document.querySelectorAll('main section')).find(section => {
+                    const heading = section.querySelector('h1, h2');
+                    return heading?.textContent.toLowerCase().includes(query) || section.textContent.toLowerCase().includes(query);
+                });
+            }
+
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                const navCheck = document.getElementById('nav-check');
+                if (navCheck && navCheck.checked) {
+                    navCheck.checked = false;
+                }
+                return;
+            }
+
+            alert('No matching section found. Try Home, Shopping, Banks, Parking, or Help.');
+        }
+
+        images.forEach(img => {
+            img.style.cursor = 'pointer';
+            img.addEventListener('click', function () {
+                modal.style.display = 'flex';
+                modalImage.src = this.src;
+            });
+        });
+
+        modalClose.addEventListener('click', function () {
+            modal.style.display = 'none';
+        });
+
+        modal.addEventListener('click', function (e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+        if (scrollToTopBtn) {
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 300) {
+                    scrollToTopBtn.classList.add('visible');
+                } else {
+                    scrollToTopBtn.classList.remove('visible');
+                }
+            });
+
+            scrollToTopBtn.addEventListener('click', function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+
+</html>
